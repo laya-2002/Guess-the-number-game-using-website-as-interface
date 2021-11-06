@@ -1,5 +1,9 @@
 function random_num(){
     var N=parseInt((document.getElementById("num")).value);
+    if(N<=1){
+        alert("Please select a number which is strictly greater than 1"); 
+        return; 
+    }
     var n=Math.floor(Math.random()*N)+1;
     var chances=Math.floor(Math.sqrt(N));
     var count=0;
