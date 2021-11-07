@@ -17,9 +17,14 @@ function random_num(){
             else if(guess>n){
                 alert("Too high. Try again...\nChances remaining : "+(chances-count));
             }
-            else{
+            else if(guess==n){
                 document.write('<h1 align="center" style="color: blue;padding-top: 5%;">Congratulations...! You won.</h1>');
                 break;
+            }
+            else{
+                alert("Enter a number");
+                --count;
+                continue;
             }
         }
         else{
