@@ -1,23 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">  
         <link rel="stylesheet" type="text/css" href="Style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"/>
         <script src="Random.js"></script>
     </head>
     <body>
         <h2 align="center">Guess The Number</h2>
-        <section class="margin-set">
+        <section class="margin-set container>
         <p>
             Enter the Maximum Limit N below, so that the number you should guess will be in the range from 1 to N (inclusive). You will have square root of N number of chances to guess the number correctly.
             If you guess the number within the given chances, you will win the game. Otherwise you will lose the game. Start playing the game and wish you good luck. Please note that N value should be 
             strictly greater than 1.
         </p>
         </section>
+        <section class="container-fluid">
         <form align="center">
             <label class="set-color" for="num"><b>Maximum Limit : </b></label>
             <input type="number" id="num" name="num"><br><br>
             <button onclick="random_num()">Submit</button>
         </form>
+        </section>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>  
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     </body>
 </html>
